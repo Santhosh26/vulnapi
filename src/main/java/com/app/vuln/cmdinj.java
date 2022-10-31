@@ -15,6 +15,7 @@ public class cmdinj {
         public String cmd(@PathVariable String data){
             Process a=null;
             String s=null;
+
             Runtime cmd = Runtime.getRuntime();
             try{
                a = cmd.exec(new String[]{"cmd.exe","/c",data});
